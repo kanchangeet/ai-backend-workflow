@@ -18,7 +18,7 @@ export function AuthLayout() {
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
-          <h1 className="text-2xl font-bold text-slate-900">MyApp</h1>
+          <h1 className="text-2xl font-bold text-slate-900">Claude Demo App</h1>
           <p className="text-slate-500 text-sm mt-1">Welcome back</p>
         </div>
 
