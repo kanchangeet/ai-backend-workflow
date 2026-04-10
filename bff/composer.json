@@ -1,0 +1,39 @@
+{
+    "name": "boilerplate/bff",
+    "description": "Backend for Frontend — API gateway layer for boilerplate",
+    "type": "project",
+    "require": {
+        "php": "^8.3",
+        "darkaonline/l5-swagger": "^8.5",
+        "guzzlehttp/guzzle": "^7.8",
+        "laravel/framework": "^11.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "laravel/pint": "^1.13",
+        "fakerphp/faker": "^1.23",
+        "mockery/mockery": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit",
+        "lint": "./vendor/bin/pint --test",
+        "format": "./vendor/bin/pint"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

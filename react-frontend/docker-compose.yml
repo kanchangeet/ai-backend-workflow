@@ -1,0 +1,21 @@
+name: boilerplate
+
+services:
+
+  # ── React SPA (Nginx) ────────────────────────────────────────────────────────
+  # Requires BFF to be running first (cd ../bff && docker compose up -d)
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: react_frontend
+    restart: unless-stopped
+    ports:
+      - "3000:80"
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    external: true
+    name: boilerplate_app_network   # Created by bff/docker-compose.yml (name: boilerplate)

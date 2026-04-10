@@ -1,0 +1,109 @@
+[2026-04-08 19:10:01] local.ERROR: Class "App\Http\Controllers\Controller" not found {"exception":"[object] (Error(code: 0): Class \"App\\Http\\Controllers\\Controller\" not found at /Users/kanchangeet/boilerplate/bff/app/Http/Controllers/DashboardController.php:9)
+[stacktrace]
+#0 /Users/kanchangeet/boilerplate/bff/vendor/composer/ClassLoader.php(576): include()
+#1 /Users/kanchangeet/boilerplate/bff/vendor/composer/ClassLoader.php(427): {closure:Composer\\Autoload\\ClassLoader::initializeIncludeClosure():575}('/Users/kanchang...')
+#2 [internal function]: Composer\\Autoload\\ClassLoader->loadClass('App\\\\Http\\\\Contro...')
+#3 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php(91): method_exists('App\\\\Http\\\\Contro...', '__invoke')
+#4 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Routing/RouteAction.php(47): Illuminate\\Routing\\RouteAction::makeInvokable('App\\\\Http\\\\Contro...')
+#5 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Routing/Route.php(198): Illuminate\\Routing\\RouteAction::parse('api/dashboard', Array)
+#6 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Routing/Route.php(179): Illuminate\\Routing\\Route->parseAction(Array)
+#7 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Routing/Router.php(671): Illuminate\\Routing\\Route->__construct(Array, 'api/dashboard', Array)
+#8 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Routing/Router.php(563): Illuminate\\Routing\\Router->newRoute(Array, 'api/dashboard', Array)
+#9 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Routing/Router.php(543): Illuminate\\Routing\\Router->createRoute(Array, 'dashboard', Array)
+#10 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Routing/Router.php(161): Illuminate\\Routing\\Router->addRoute(Array, 'dashboard', 'App\\\\Http\\\\Contro...')
+#11 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Support/Facades/Facade.php(361): Illuminate\\Routing\\Router->get('dashboard', 'App\\\\Http\\\\Contro...')
+#12 /Users/kanchangeet/boilerplate/bff/routes/api.php(23): Illuminate\\Support\\Facades\\Facade::__callStatic('get', Array)
+#13 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Routing/Router.php(511): Illuminate\\Routing\\RouteFileRegistrar->{closure:/Users/kanchangeet/boilerplate/bff/routes/api.php:22}(Object(Illuminate\\Routing\\Router))
+#14 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Routing/Router.php(467): Illuminate\\Routing\\Router->loadRoutes(Object(Closure))
+#15 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(207): Illuminate\\Routing\\Router->group(Array, Object(Closure))
+#16 /Users/kanchangeet/boilerplate/bff/routes/api.php(22): Illuminate\\Routing\\RouteRegistrar->group(Object(Closure))
+#17 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Routing/RouteFileRegistrar.php(35): require('/Users/kanchang...')
+#18 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Routing/Router.php(513): Illuminate\\Routing\\RouteFileRegistrar->register('/Users/kanchang...')
+#19 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Routing/Router.php(467): Illuminate\\Routing\\Router->loadRoutes('/Users/kanchang...')
+#20 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Routing/RouteRegistrar.php(207): Illuminate\\Routing\\Router->group(Array, '/Users/kanchang...')
+#21 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Configuration/ApplicationBuilder.php(214): Illuminate\\Routing\\RouteRegistrar->group('/Users/kanchang...')
+#22 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Foundation\\Configuration\\ApplicationBuilder->{closure:Illuminate\\Foundation\\Configuration\\ApplicationBuilder::buildRoutingCallback():205}()
+#23 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::{closure:Illuminate\\Container\\BoundMethod::call():35}()
+#24 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(83): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#25 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#26 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Container/Container.php(696): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#27 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(162): Illuminate\\Container\\Container->call(Object(Closure))
+#28 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Support/Providers/RouteServiceProvider.php(59): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->loadRoutes()
+#29 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider->{closure:Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider::register():53}()
+#30 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate\\Container\\BoundMethod::{closure:Illuminate\\Container\\BoundMethod::call():35}()
+#31 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(83): Illuminate\\Container\\Util::unwrapIfClosure(Object(Closure))
+#32 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Object(Closure), Object(Closure))
+#33 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Container/Container.php(696): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Object(Closure), Array, NULL)
+#34 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(144): Illuminate\\Container\\Container->call(Object(Closure))
+#35 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1154): Illuminate\\Support\\ServiceProvider->callBootedCallbacks()
+#36 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1132): Illuminate\\Foundation\\Application->bootProvider(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider))
+#37 [internal function]: Illuminate\\Foundation\\Application->{closure:Illuminate\\Foundation\\Application::boot():1131}(Object(Illuminate\\Foundation\\Support\\Providers\\RouteServiceProvider), 'Illuminate\\\\Foun...')
+#38 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1131): array_walk(Array, Object(Closure))
+#39 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/BootProviders.php(17): Illuminate\\Foundation\\Application->boot()
+#40 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(342): Illuminate\\Foundation\\Bootstrap\\BootProviders->bootstrap(Object(Illuminate\\Foundation\\Application))
+#41 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(474): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#42 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(196): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#43 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#44 /Users/kanchangeet/boilerplate/bff/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#45 {main}
+"} 
+[2026-04-08 20:00:18] local.ERROR: There are no commands defined in the "l5-swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"l5-swagger\" namespace. at /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(743): Symfony\\Component\\Console\\Application->findNamespace('l5-swagger')
+#1 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(298): Symfony\\Component\\Console\\Application->find('l5-swagger:gene...')
+#2 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(195): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /Users/kanchangeet/boilerplate/bff/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#6 {main}
+"} 
+[2026-04-08 20:00:23] local.ERROR: There are no commands defined in the "l5-swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"l5-swagger\" namespace. at /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(743): Symfony\\Component\\Console\\Application->findNamespace('l5-swagger')
+#1 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(298): Symfony\\Component\\Console\\Application->find('l5-swagger:gene...')
+#2 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(195): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /Users/kanchangeet/boilerplate/bff/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#6 {main}
+"} 
+[2026-04-08 20:00:28] local.ERROR: There are no commands defined in the "l5-swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"l5-swagger\" namespace. at /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(743): Symfony\\Component\\Console\\Application->findNamespace('l5-swagger')
+#1 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(298): Symfony\\Component\\Console\\Application->find('l5-swagger:gene...')
+#2 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(195): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /Users/kanchangeet/boilerplate/bff/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#6 {main}
+"} 
+[2026-04-08 20:00:33] local.ERROR: There are no commands defined in the "l5-swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"l5-swagger\" namespace. at /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(743): Symfony\\Component\\Console\\Application->findNamespace('l5-swagger')
+#1 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(298): Symfony\\Component\\Console\\Application->find('l5-swagger:gene...')
+#2 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(195): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /Users/kanchangeet/boilerplate/bff/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#6 {main}
+"} 
+[2026-04-08 20:00:39] local.ERROR: There are no commands defined in the "l5-swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"l5-swagger\" namespace. at /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(743): Symfony\\Component\\Console\\Application->findNamespace('l5-swagger')
+#1 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(298): Symfony\\Component\\Console\\Application->find('l5-swagger:gene...')
+#2 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(195): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /Users/kanchangeet/boilerplate/bff/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#6 {main}
+"} 
+[2026-04-08 20:00:45] local.ERROR: There are no commands defined in the "l5-swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"l5-swagger\" namespace. at /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(743): Symfony\\Component\\Console\\Application->findNamespace('l5-swagger')
+#1 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(298): Symfony\\Component\\Console\\Application->find('l5-swagger:gene...')
+#2 /Users/kanchangeet/boilerplate/bff/vendor/symfony/console/Application.php(195): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /Users/kanchangeet/boilerplate/bff/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 /Users/kanchangeet/boilerplate/bff/artisan(13): Illuminate\\Foundation\\Application->handleCommand(Object(Symfony\\Component\\Console\\Input\\ArgvInput))
+#6 {main}
+"} 

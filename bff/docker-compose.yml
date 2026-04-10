@@ -1,0 +1,42 @@
+name: boilerplate
+
+services:
+
+  # ── PHP-FPM (BFF app) ───────────────────────────────────────────────────────
+  bff_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: app
+    container_name: bff_app
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "0.0.0.0:9080:80"  # BFF exposed on :9080
+    volumes:
+      - bff_storage:/var/www/html/storage
+    networks:
+      - backend
+      - app_network
+
+  # ── Nginx (shares bff_app's network namespace) ────────────────────────────
+  bff_nginx:
+    image: nginx:1.25-alpine
+    container_name: bff_nginx
+    restart: unless-stopped
+    volumes:
+      - ./docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./public:/var/www/html/public:ro
+    depends_on:
+      - bff_app
+    network_mode: "service:bff_app"
+
+volumes:
+  bff_storage:
+
+networks:
+  backend:
+    external: true
+    name: boilerplate_backend   # Created by laravel-backend docker-compose (name: boilerplate)
+  app_network:
+    driver: bridge

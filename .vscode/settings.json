@@ -1,0 +1,15 @@
+{
+    "sqltools.connections": [
+        {
+            "ssh": "Disabled",
+            "previewLimit": 50,
+            "server": "db.cwqvpghwbjeyyczsqrsd.supabase.co",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "laravel_demo",
+            "database": "postgres",
+            "username": "postgres",
+            "password": "C&EaPH_aQK5-5u4"
+        }
+    ]
+}
