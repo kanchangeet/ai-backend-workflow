@@ -25,7 +25,7 @@ export function Sidebar() {
               <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </div>
-          <span className="font-bold text-slate-900">MyApp</span>
+          <span className="font-bold text-slate-900">Claude Demo App</span>
         </div>
       </div>
 

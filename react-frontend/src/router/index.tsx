@@ -8,6 +8,7 @@ import { MasterListPage } from '@/pages/master/MasterListPage'
 import { MasterCreatePage } from '@/pages/master/MasterCreatePage'
 import { MasterEditPage } from '@/pages/master/MasterEditPage'
 import { PreviewPage } from '@/pages/preview/PreviewPage'
+import { SettingsPage } from '@/pages/SettingsPage'
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,7 @@ export const router = createBrowserRouter([
       { path: '/category/create', element: <MasterCreatePage /> },
       { path: '/category/:id/edit', element: <MasterEditPage /> },
       { path: '/preview', element: <PreviewPage /> },
+      { path: '/settings', element: <SettingsPage /> },
     ],
   },
   {
